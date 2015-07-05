@@ -277,4 +277,12 @@
     }
 }
 
+-(void)toggleSideMenu
+{
+    if([self visible])
+        [self hideMenuViewController];
+    else
+        [self presentMenuViewController];
+}
+
 @end
